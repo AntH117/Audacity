@@ -1,0 +1,146 @@
+.third {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100vw;
+}
+
+.third-left {
+  width: 100%;
+  height: 100vh;
+  background-color: #F2D6A5 ;
+  position: sticky;
+  top: 0;
+}
+
+
+.third-left-text {
+  font-size: 80px;
+  margin-left: 6%;
+  margin-top: 6%;
+  word-wrap: normal;
+  width: 50%;
+  font-weight: bold;
+  line-height: 90%;
+}
+
+.third-left-img {
+  width: 30%;
+  position: absolute;
+  right: 20%;
+  animation: roll 0.3s ease-in-out;
+  display: block;
+  animation: rock 1s ease-in-out infinite;
+}
+
+@keyframes rock {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.third-right {
+  width: 100%;
+  height: 140vh;
+  background-color: #9ac9d1  ;
+  overflow: hidden;
+}
+
+.third-right-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+  width: 100%;
+  height: 100%;
+  margin: 4%;
+}
+
+.cat-grid {
+  min-width: 200px;
+  width: 80%;
+  height: 40vh;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-grid:nth-child(1) {
+  background-color: #FFD1DC;
+}
+
+.cat-grid:nth-child(1) img{
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+}
+.cat-grid:nth-child(2) {
+  background-color: #ADD8E6;
+}
+.cat-grid:nth-child(2) img {
+}
+.cat-grid:nth-child(5) {
+  background-color: #FFF8DC;
+}
+.cat-grid:nth-child(5) img {
+  width: 150%;
+  left: -20%;
+}
+
+.cat-grid:nth-child(6) {
+  background-color: #98FB98;
+}
+
+.cat-grid:nth-child(6) img{
+  left: -40%;
+  width: 170%;
+}
+
+
+.cat-grid:nth-child(7) {
+  background-color: #ADD8E6;
+}
+.cat-grid:nth-child(7) img{
+  left: -30%;
+  width: 150%;
+}
+
+
+.cat-grid:nth-child(8) {
+  background-color: #FFD1DC;
+}
+.cat-grid:nth-child(8) img{
+  left: -15%;
+  width: 130%;
+}
+
+.cat-grid img {
+  position: absolute;
+  top: 100%;
+}
+
+.cat-pop-up {
+  animation: pop-up 0.5s forwards;
+}
+
+.cat-none {
+  width: 80%;
+  height: 80%;
+}
+
+@keyframes pop-up {
+  0% {
+    top: 100%
+  }
+  100% {
+    top: 0%
+  }
+}
+

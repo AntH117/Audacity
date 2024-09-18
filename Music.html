@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="Music.js"></script>
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="third.css">
+    <link rel="stylesheet" href="fourth.css">
+    <link rel="stylesheet" href="fifth.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="body">
+      <div class="first">
+        <div class="first-left">
+          <div class="first-left-title">
+            Audacity
+          </div>
+          <div class="first-left-body">
+            The <span>#1</span> source for high-quality music
+          </div>
+          <div class="first-left-end">
+            An ever-growing catalogue of high-quality music, sourced by talented music creators from all over the world.
+          </div>
+        </div>
+        <div class="first-right">
+          <div class="first-right-container">
+            <div class="key-m key" onmouseover="key_hover(this)" onmouseout="key_hover_off(this)" onclick="key_click(this, 'harp.wav')">
+              <div class="key-letters">
+                <span>M</span>
+              </div>
+            </div>
+            <div class="key-u key"onmouseover="key_hover(this)" onmouseout="key_hover_off(this)" onclick="key_click(this, 'chime.wav')">
+              <div class="key-letters">
+                <span>U</span>
+              </div>
+            </div>
+            <div class="key-s key"onmouseover="key_hover(this)" onmouseout="key_hover_off(this)" onclick="key_click(this, 'festive.wav')">
+              <div class="key-letters">
+                <span>S</span>
+              </div>
+            </div>
+            <div class="key-i key"onmouseover="key_hover(this)" onmouseout="key_hover_off(this)" onclick="key_click(this, 'flute.wav')">
+              <div class="key-letters">
+                <span>I</span>
+              </div>
+            </div>
+            <div class="key-c key"onmouseover="key_hover(this)" onmouseout="key_hover_off(this)"onclick="key_click(this, 'music-box.wav')">
+              <div class="key-letters">
+                <span>C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="second">
+        <div class="second-left">
+          <div class="second-left-container">
+            <div class="genres" onclick="music_select('book.png', this, 'lofi.mp3')" id="start">
+              <div class="genre-name">
+                <img class="genre-icon" src="book.png">
+                <div>L</div>
+                <div>O</div>
+                <div>F</div>
+                <div>I</div>
+              </div>
+            </div>
+            <div class="genres" onclick="music_select('disc.png', this, 'edm.mp3')">
+              <div class="genre-name">
+                <img class="genre-icon" src="disc.png">
+                <div>E</div>
+                <div>D</div>
+                <div>M</div>
+              </div>
+            </div>
+            <div class="genres" onclick="music_select('rain.png', this, 'lonely.mp3')">
+              <div class="genre-name">
+                <img class="genre-icon" src="rain.png">
+                <div>L</div>
+                <div>O</div>
+                <div>N</div>
+                <div>E</div>
+                <div>L</div>
+                <div>Y</div>
+              </div>
+            </div>
+            <div class="genres" onclick="music_select('guitar.png', this, 'instrumental.mp3')">
+              <div class="genre-name">
+                <img class="genre-icon" src="guitar.png">
+                <div>I</div>
+                <div>N</div>
+                <div>S</div>
+                <div>T</div>
+                <div>R</div>
+                <div>U</div>
+                <div>M</div>
+                <div>E</div>
+                <div>N</div>
+                <div>T</div>
+                <div>A</div>
+                <div>L</div>
+              </div>
+            </div>
+            <div class="genres" onclick="music_select('note.png', this, 'music-box-2.mp3')">
+              <div class="genre-name">
+                <img class="genre-icon" src="note.png">
+                <div>M</div>
+                <div>U</div>
+                <div>S</div>
+                <div>I</div>
+                <div>C</div>
+                <div>B</div>
+                <div>O</div>
+                <div>X</div>
+              </div>
+            </div>
+            <div class="genres" onclick="music_select('voice.png', this, 'vocals.mp3')">
+              <div class="genre-name">
+                <img class="genre-icon" src="voice.png">
+                <div>V</div>
+                <div>O</div>
+                <div>C</div>
+                <div>A</div>
+                <div>L</div>
+                <div>S</div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="second-right">
+            <div class="second-right-top">
+              <div class="srtl">
+                <img src="book.png" class="music_icon" id="music_icon">
+              </div>
+              <div class="srtr">
+                <div id="pausePlay" class="pausePlay" onclick="music_toggle()">
+                    <img src="play.png" id="playPauseButton">
+                </div>
+              </div>
+            </div>
+            <div class="second-right-bottom">
+              <div class="falling-container">
+                <img src="book.png" class="falling-image">
+                <img src="book.png" class="falling-image">
+                <img src="book.png" class="falling-image">
+                <img src="book.png" class="falling-image">
+                <img src="book.png" class="falling-image">
+                <img src="book.png" class="falling-image">
+                <img src="book.png" class="falling-image">
+                <img src="book.png" class="falling-image">
+                <img src="book.png" class="falling-image">
+                <img src="book.png" class="falling-image">
+                <img src="book.png" class="falling-image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="third">
+        <div class="third-left">
+          <div class="third-left-text">
+            We work with the best Cat talents across the yarn.
+            <img src="yarn.png" class="third-left-img">
+          </div>
+        </div>
+        <div class="third-right">
+          <div class="third-right-container">
+              <div class="cat-grid">
+                <img src="cat1.png">
+              </div>
+              <div class="cat-grid">
+                <img src="cat2.png">
+              </div>
+              <div class="cat-none"></div>
+              <div class="cat-none"></div>
+              <div class="cat-grid">
+                <img src="cat3.png">
+              </div>
+              <div class="cat-grid">
+                <img src="cat4.png">
+              </div>
+              <div class="cat-grid">
+                <img src="cat5.png">
+              </div>
+              <div class="cat-grid">
+                <img src="cat6.png">
+              </div>
+              <div class="cat-none"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fourth">
+        <div class="fourth-left">
+          <div class="ball-box" id="ball-box">
+            <div class="ball">
+              <img src="spotify.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="fourth-right">
+          <div class="fourth-right-body">
+            Our music is rated #1 by 9/10 cats worldwise.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="fifth">
+        <div class="fifth-left">
+          <div class="fifth-questions" onclick="questionSelect(this, `one`)"> How is the music that makes up your catalog created?</div>
+          <div class="fifth-questions" onclick="questionSelect(this, `two`)"> How do you know what cats are listening to?</div>
+          <div class="fifth-questions" onclick="questionSelect(this, `three`)"> Where can I find your music</div>
+          <div class="fifth-questions" onclick="questionSelect(this, `four`)"> Who are the people behind Audacity</div>
+          <div class="fifth-questions" onclick="questionSelect(this, `five`)"> Do you pay the cats who are behind the music?</div>
+        </div>
+        <div class="fifth-right">
+          <div class="answerHeader">
+            <span>Answer</span>
+          </div>
+          <div class="answer" id="answer">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

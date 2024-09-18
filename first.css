@@ -1,0 +1,115 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.first-left {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(36, 170, 211);
+  width: 50%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.first-left-title {
+  font-size: 25px;
+  margin-top: 3%;
+  margin-left: 4%;
+  font-weight: bold;
+}
+
+.first-left-body {
+  font-size: 80px;
+  margin-left: 4%;
+  word-wrap: normal;
+  width: 50%;
+  font-weight: bold;
+  line-height: 90%;
+}
+
+.first-left-body span{
+  color: rgb(208, 255, 0);
+}
+
+.first-left-end {
+  font-size: 20px;
+  margin-bottom: 10%;
+  margin-left: 4%;
+  width: 30%;
+}
+
+
+.first-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(61, 60, 60);
+  width: 50%;
+  height: 100%;
+}
+
+.first-right-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.key{
+  width: 100%;
+  height: 150px;
+  margin-bottom: 1%;
+  border-radius: 5px;
+  border-style: none;
+  position: relative;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.key-m {
+  background-color: rgb(255, 182, 193) ;
+}
+
+.key-u {
+  background-color: rgb(135, 206, 235);
+}
+
+.key-s {
+  background-color: rgb(50, 205, 50);
+}
+
+.key-i {
+  background-color: rgb(255, 218, 185) ;
+}
+
+.key-c {
+  background-color: rgb(199, 145, 201);
+}
+
+.key-letters {
+  width: 90px;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.13);
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
